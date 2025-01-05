@@ -21,7 +21,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-          - name: Test application
+      - name: Test application
         run: echo "No tests defined yet!"
 
       - name: Build Docker image
@@ -35,5 +35,3 @@ jobs:
 
       - name: Push Docker image to Docker Hub
         run: docker push yohaniyuviena/flask-hello-world
-
-     
